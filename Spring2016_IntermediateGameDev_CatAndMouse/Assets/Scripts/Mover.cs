@@ -4,6 +4,7 @@ using System.Collections;
 public class Mover : MonoBehaviour {
 
 	public float moveSpeed;
+	public AudioSource bumpSound;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -22,6 +23,7 @@ public class Mover : MonoBehaviour {
 			else {
 				transform.Rotate(0f, -90f, 0f);
 			}
+			bumpSound.Play();
 		}
 	}
 }

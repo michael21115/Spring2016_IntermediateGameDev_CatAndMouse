@@ -6,6 +6,7 @@ public class Cat : MonoBehaviour {
 	public Transform mouse;
 	public GameObject model1;
 	public GameObject model2;
+	public GameObject blood;
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -35,6 +36,7 @@ public class Cat : MonoBehaviour {
 						if (catRayHitInfo.distance <= 5f){
 
 							GameObject.Destroy(mouse.gameObject);
+							blood.SetActive(true);
 
 						} else {
 							
