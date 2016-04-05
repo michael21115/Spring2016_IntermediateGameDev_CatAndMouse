@@ -22,8 +22,8 @@ public class Mover : MonoBehaviour {
 			}
 			else {
 				transform.Rotate(0f, -90f, 0f);
+				bumpSound.Play();
 			}
-			bumpSound.Play();
 		}
 	}
 }
